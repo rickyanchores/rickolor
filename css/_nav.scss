@@ -1,0 +1,17 @@
+#navbar{
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style:none; 
+        height: 100%;
+        li{
+            a{  
+                color: #e5e2e2;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bolder;
+            }
+        }
+    }
+}

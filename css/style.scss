@@ -1,0 +1,22 @@
+
+@import "./grid-container";
+@import "./logo";
+@import "./nav";
+@import "./title";
+@import "./paragraph";
+@import "./footer";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1d1d1d;
+    color: #e5e2e2;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+

@@ -1,0 +1,147 @@
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 5% 35% 30% 30%;
+      grid-template-columns: 5% 35% 30% 30%;
+  -ms-grid-rows: 10% 1fr 1fr 5%;
+      grid-template-rows: 10% 1fr 1fr 5%;
+      grid-template-areas: ". logo box1 nav" ". title  box1 box3" ". par par box2" ". footer footer box2";
+}
+
+#logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: logo;
+}
+
+#navbar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: nav;
+}
+
+.box1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: box1;
+  background-color: #d91c65;
+}
+
+.title {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: title;
+}
+
+.box2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: box2;
+  background-color: #e8dbe6;
+}
+
+.box3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: box3;
+}
+
+.paragraph {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: par;
+}
+
+#main-footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+#logo {
+  margin-left: 10%;
+  color: #e5e2e2;
+  height: 100%;
+  font-weight: bolder;
+}
+
+#navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  height: 100%;
+}
+
+#navbar ul li a {
+  color: #e5e2e2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.title h1 {
+  font-size: 60px;
+  padding-top: 5em;
+  padding-left: 2em;
+}
+
+.paragraph {
+  position: relative;
+  z-index: 1;
+}
+
+.paragraph h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 1em;
+  font-size: 30px;
+}
+
+/* WaterMark CSS style*/
+.paragraph h1 {
+  opacity: 0.2;
+  bottom: 0.2em;
+  left: 10%;
+  font-size: 22em;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#main-footer {
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #1d1d1d;
+  color: #e5e2e2;
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 5% 35% 30% 30% ;
+    grid-template-rows: 10% 1fr 1fr 5%;
+    grid-template-areas: ". logo box1 nav"
+                        ". title  box1 box3"
+                        ". par par box2"
+                        ". footer footer box2";
+}
+
+#logo{
+    grid-area: logo;
+}
+
+#navbar{
+    grid-area: nav;
+}
+
+.box1{
+    grid-area: box1;
+    background-color: #d91c65;
+}
+.title{
+    grid-area: title;
+}
+.box2{
+    grid-area: box2;
+    background-color: #e8dbe6;
+}
+.box3{
+    grid-area: box3;
+}
+.paragraph{
+    grid-area: par;
+}
+
+#main-footer{
+    grid-area: footer;
+}
